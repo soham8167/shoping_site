@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Table Design</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+    caption{
+      font-size: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<table id="table">
+  <caption>ENQUIRY USER</caption>
+  <tr>
+    <th>S NO</th>
+    <th>NAME</th>
+    <th>EMAIL</th>
+    <th>MESSAGE</th>
+  </tr>
+ 
+  
+</table>
+
+</body>
+</html>
+
+    <script>
+        function fetch()
+        {
+            var table = document.getElementById("table");
+            var i;
+            var y = 1;
+            for(i=0;i<localStorage.length;i++)
+            {
+               var x= localStorage.key(i);
+             
+               if(x.indexOf("contact") != -1)
+               {
+                x = JSON.parse(localStorage.getItem(x));
+                // document.write(x.username+"<br>");
+                
+                
+               
+               var tr = document.createElement("TR");
+               var td1 = document.createElement("TD");
+                var td2 = document.createElement("TD");
+                var td3 = document.createElement("TD");
+                var td4 = document.createElement("TD");
+                td1.innerHTML = y;
+                y++;
+td2.innerHTML = x.name;
+td3.innerHTML = x.email;
+td4.innerHTML = x.message;
+// Append to another element:
+tr.appendChild(td1);
+tr.appendChild(td2);
+tr.appendChild(td3);
+tr.appendChild(td4);
+table.appendChild(tr);
+
+               }
+               
+               
+            }
+        }
+            fetch();
+    </script>
+</body>
+</html>

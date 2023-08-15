@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+</head>
+
+<body>
+  <div class="nav container">
+    
+    <ul id="navbar">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="available.html">Shop Product</a></li>
+      
+      <li><a href="about.html">About us</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+    </ul>
+    </div>
+
+  <section class="contact">
+    <div class="content_c">
+      <h2>Contact us</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, illo est mollitia beatae debitis repellat
+        vitae obcaecati architecto quaerat adipisci, veritatis nihil rem. Debitis eaque fugiat sed ducimus eveniet
+        deleniti.</p>
+    </div>
+    <div class="container_c">
+      <div class="contactInfo">
+        <div class="box-b">
+          <div class="icon-i"> <i class='bx bxs-location-plus'></i></div>
+          <div class="text">
+            <h3>Address</h3>
+            <p>64633 ,<br>Ruby,Kolkata,<br>700107</p>
+          </div>
+        </div>
+        <div class="box-b">
+          <div class="icon-i"><i class='bx bx-phone'></i></i></div>
+          <div class="text">
+            <h3>Phone</h3>
+            <p>8737381937 ,</p>
+          </div>
+        </div>
+        <div class="box-b">
+          <div class="icon-i"><i class='bx bx-envelope' id="bbb"></i></i></div>
+          <div class="text">
+            <h3>Email</h3>
+            <p>sohammondal50285@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div id="contact_from_id" class="contactForm">
+              <!-- contact form start -->
+              <form action="" id="contact_form">
+                <h2 id="message">Send message</h2>
+                <div class="inputbox">
+                  <input type="text" value="" name="" id="full_name" required="required">
+                  <span>Full name</span>
+      
+                </div>
+                <div class="inputbox">
+                  <input type="text" value="" name="" id="full_email" required="required">
+                  <span>Email</span>
+                </div>
+                <div class="inputbox">
+                  <textarea id="full_message" required="required"></textarea>
+                  <span>Type your message...</span>
+                </div>
+                <div class="inputbox">
+                  <input type="submit" value="submit" id="submit" onclick="return save()"> 
+                </div>
+              </form>
+              <!-- contact end -->
+      </div>
+     <!-- <div id="submit_id">
+        <h2>&#10003; SUBMIT SUCCESSFULLY</h2>
+      </div>-->
+    </div>
+    
+  </section>
+</body>
+<script src="contact save.js"></script>
+<!--<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+  import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
+  
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAGQvYzl5f6dSZ0izcMN19wpAqoEfh-DRY",
+    authDomain: "contactform-4ad19.firebaseapp.com",
+    databaseURL: "https://contactform-4ad19-default-rtdb.firebaseio.com",
+    projectId: "contactform-4ad19",
+    storageBucket: "contactform-4ad19.appspot.com",
+    messagingSenderId: "214100277179",
+    appId: "1:214100277179:web:d579e4f63a45f75d76769e"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+
+  //get ref to database services
+  const db=getDatabase(app);
+  document.getElementById("submit").addEventListener("click", function(e){
+    e.preventDefault();
+    set(ref(db,'user/' + document.getElementById("full_name").value),
+    
+    {
+      Name:document.getElementById("full_name").value,
+      Email:document.getElementById("full_email").value,
+      Message:document.getElementById("full_message").value
+
+    });
+    alert("Message sent !");
+  })
+</script>
+
+  <script src="./contact.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>-->
+</html>
