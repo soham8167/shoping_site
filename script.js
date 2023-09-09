@@ -37,14 +37,31 @@ pwShowHide.forEach((icon) => {
   let getPwInput=icon.parentElement.querySelector("input");
   if(getPwInput.type==="password"){
     getPwInput.type="text";
-    icon.classList.replace("bx-bxs-hide ","pw_hide")
+    // icon.classList.replace("bx-bxs-hide ","pw_hide")
+    icon.classList("pw_hide")
   }
   else{
     getPwInput.type="password";
-    icon.classList.replace("pw_hide","bx-bxs-hide")
+    // icon.classList.replace("pw_hide","bx-bxs-hide")
+    
   }
 });
 });
+
+//password show and hide
+// eyeicon=document.getElementsByClassName(".pw_hide");
+// password=document.getElementById("#password");
+// eyeicon.addEventListener=("click", function (){
+//   if(password.type=="password"){
+//     password.type="text";
+//   }
+
+// else{
+//   password.type="password";
+// }
+// });
+
+
 
 signupBtn.addEventListener("click", (e)=>{
   e.preventDefault();
