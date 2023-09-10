@@ -1123,7 +1123,7 @@ font-size: 50px;
     column-gap: 127px;
     font-size: 19px;
     position: relative;
-    left: 272px;
+    left: 25rem;
 }
 
 #nav_bar li a:hover {
@@ -1263,7 +1263,7 @@ border-radius: 20px;
   color: #f0f0f0;
   cursor: pointer;
   position: relative;
-  left: 32rem;
+  left: -24rem;
 }
 .ttt{
   position: relative;
