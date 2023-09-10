@@ -1250,7 +1250,7 @@ border-radius: 20px;
   content: "\eea7";
   font-size: 30px;
   position: relative;
-  left: 200px;
+  left: 2rem;
 }
 .bxs-shopping-bag:hover{
   color: #00d40e;
